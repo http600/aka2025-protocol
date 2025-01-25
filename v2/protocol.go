@@ -1,3 +1,4 @@
 package np
 
-type Protocol interface{}
+type Protocol interface {
+}
