@@ -1,4 +1,4 @@
-package np
+package protocol
 
 type Protocol interface {
 }
