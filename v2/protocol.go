@@ -1,3 +1,3 @@
-type struct X {
-  
-}
+package np
+
+type Protocol interface{}
