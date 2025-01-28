@@ -1,5 +1,7 @@
 package protocol
 
+import "time"
+
 type Protocol interface {
 }
 
@@ -27,7 +29,7 @@ type PriceEntity struct {
 
 type PriceOfRenting struct {
     PriceEntity
-    Period int `json:"period"` //in seconds
+    Period time.Duration `json:"duration"`
 }
 
 type Item struct {
