@@ -1,7 +1,5 @@
 package protocol
 
-import "time"
-
 type PriceEntity struct {
     Price    int      `json:"price"`
     Currency Currency `json:"currency"`
@@ -9,5 +7,5 @@ type PriceEntity struct {
 
 type PriceOfRenting struct {
     PriceEntity
-    Period time.Duration `json:"duration"`
+    Period string `json:"duration"`
 }
