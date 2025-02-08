@@ -5,7 +5,7 @@ type PriceEntity struct {
     Currency Currency `json:"currency,omitempty"`
 }
 
-type PriceRent struct {
+type PriceOffer struct {
     PriceEntity
     PriceEvery int `json:"price_every,omitempty"`
     MinTerm    int `json:"min_term,omitempty"`
