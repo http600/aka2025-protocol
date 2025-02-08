@@ -1,11 +1,12 @@
 package protocol
 
 type PriceEntity struct {
-    Price    int      `json:"price"`
-    Currency Currency `json:"currency"`
+    Price    int      `json:"price,omitempty"`
+    Currency Currency `json:"currency,omitempty"`
 }
 
-type PriceOfRenting struct {
+type PriceRent struct {
     PriceEntity
-    Period string `json:"duration"`
+    PriceEvery int `json:"price_every,omitempty"`
+    MinTerm    int `json:"min_term,omitempty"`
 }
