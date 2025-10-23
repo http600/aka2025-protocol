@@ -6,6 +6,7 @@ type Link struct {
     PlatCode   int    `json:"plat_code,omitempty"`
     PlatName   string `json:"plat_name,omitempty"`
     SecretCode string `json:"secret_code,omitempty"`
+    PlatProfileKey string `json:"plat_profile_key,omitempty"`
 }
 
 type ListLinksResponse struct {
